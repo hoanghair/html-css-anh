@@ -1,0 +1,348 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+/* nav-bar */
+.nav-bar{
+    background-color: black;
+    display:flex;
+    justify-content: space-between;
+}
+.nav-list{
+    display:flex;
+}
+li{
+    list-style: none;
+}
+.nav-temp a{
+    display: inline-block;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.nav-temp > a:hover, .nav-icon:hover{
+    background-color: aliceblue;
+    color: black;
+}
+.nav-icon {
+    display:flex;
+    align-items: center;
+    padding:0 10px;
+}
+i{
+    color:#fff;
+}
+.nav-icon:hover a{
+    color: black;
+}
+.nav-icon:hover i {
+    color: black;
+}
+/* container */
+.container-top{
+    position: relative;
+}
+.container-top img{
+    width: 100%;
+    height: 561px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container-top button{
+    position: absolute;
+    background-color: black;
+    color: #fff;
+    padding: 8px 16px;
+    bottom: 18px;
+    left: 16px;
+    font-size: 24px;
+}
+.container-top > button:hover{
+    background-color: aquamarine;
+    color: black;
+}
+.nap-temp{
+    color: #fff;
+}
+.nap-dropdown{
+    position: relative;
+}
+.dropdown-list{
+    top: 40px;
+    z-index: 2;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 170px;
+    box-shadow: 1px 1px 8px #999;
+    
+}
+.dropdown-list a{
+    color: black;
+}
+.nap-dropdown:hover .dropdown-list {
+    display: block;
+}
+/* container-team */
+.container-team{
+    text-align: center;
+    padding: 40px 0;
+}
+h3{
+    font-size: calc(1.3rem + .6vw);
+}
+h5{
+    font-size: 1.25rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+/* .row{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.container-team-content{
+    width: 33.33333333%;
+    margin-top: 40px;
+    text-align: center;
+} */
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+.container-team-content{
+    flex-grow:calc(1);
+    text-align: center;
+    padding: 20px;
+}
+.container-team-content img{
+    width: 45%;
+    border-radius: 100%;
+}
+/* .container-team-content img:hover{
+    opacity: 0.5;
+} */
+.container-team-profile{
+    text-decoration: none;
+}
+.container-team-content:hover{
+    background-color: aliceblue;
+    box-shadow: 1px 1px 12px #888;
+    display: inline-block;
+    
+}
+/* container-work */
+.container-work{
+    background-color: #333333;
+    padding: 64px 0;
+}
+.container-work-item{
+    width: 25%;
+    padding: 10px;
+    /* text-align: center; */
+    /* margin-right: 17px; */
+}
+.container-work-item img{
+    width: 100%;
+    vertical-align: middle;
+}
+.container-work-item .abc, .container-work-item p{
+    color: #fff;
+    margin-left: 5px;
+}
+
+.container-work-item div{
+    background-color: #fff;
+    padding-left: 17px;
+    border-radius: 3px;
+}
+/* container-pricing */
+.container-pricing{
+    margin-bottom: 70px;
+}
+.container-pricing h3, h5{
+    /* padding-top: 15px;
+    padding-bottom: 15px; */
+    text-align: center;
+    margin: 10px 0;
+    line-height: 30px;
+}
+.container-pricing .container-pricing-title{
+    padding-top: 20px;
+}
+.row-two{
+    display: flex; 
+}
+.container-pricing-content{
+    flex-grow: calc(1);
+    text-align: center;
+    padding: 10px;
+}
+.container-pricing-content:hover{
+    box-shadow: 1px 1px 12px #888;
+}
+.container-pricing-header{
+    background-color: black;
+    padding: 40px 0;
+}
+.container-pricing-header h2{
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
+.container-pricing-item{
+    padding: 16px 0;
+    border-bottom: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+}
+.container-pricing-price{
+    padding: 16px 0;
+    border-bottom: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+}
+.container-pricing-list{
+    text-align: center;
+}
+.container-pricing-item span{
+    font-weight: 700;
+}
+.container-pricing-sign{
+    padding: 24px 16px;
+    background-color: #f0f0f0;
+}
+.container-pricing-sign button{
+    display: block;
+    margin: 0 auto;
+    border: none;
+    font-size: 15px;
+    padding: 12px 24px;
+    background-color: #009688;
+    color: #fff;
+}
+.container-pricing-sign button:hover{
+    background-color:#ccc ;
+}
+/* container-contact */
+.container-contact{
+    background-color: #f0f0f0;
+    padding: 64px 16px;
+}
+.row-three{
+    display: flex;
+}
+.container-contact-add{
+    flex-grow: calc(2);
+}
+.container-contact-input{
+    flex-grow: calc(3);
+}
+.container-contact-add h3{
+    display: inline-block;
+    font-size: 24px;
+    border-bottom: 5px solid #009688;
+    margin: 16px 0;
+}
+.container-contact-add p{
+    font-size: 17px;
+    line-height: 15px;
+    margin: 15px 0;
+}
+.add-list{
+    font-size: 17px;
+    line-height: 15px;
+}
+.add-item{
+    margin: 15px;
+}
+.add-item > i{
+    color: #009688;
+    margin-right: 10px;
+}
+.container-contact-add h4{
+    font-size: 24px;
+    margin: 10px 0;
+}
+.container-contact-input > form{
+    background-color: #fff;
+    font-size: 15px;
+    padding: 16px;
+    box-shadow: 1px 1px 15px #666;
+    line-height: 20px;
+}
+.container-contact-input .input-content{
+    margin: 16px 0px;
+}
+.container-contact-input .send{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+.input-content input{
+    width: 98%;
+    padding: 8px;
+    border:1px solid rgb(218, 214, 214);
+}
+.send button{
+    font-size: 16px;
+    padding: 8px 16px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 6px;
+}
+/* footer */
+footer{
+    background-color: black;
+}
+footer img{
+    width: 100%;
+}
+footer div{
+    padding: 32px 16px 16px 16px;
+    
+}
+footer h2{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 10px 0;
+}
+.follow-link{
+    display: flex;
+    justify-content: center;
+}
+.link-item a{
+    background-color: white;
+    display: block;
+    padding: 10px;
+    color: black;
+    margin: 3px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.link-item > a > i{
+    color: black;
+}
+.link-item > a:hover{
+    box-shadow: 1px 1px 20px #fff ;
+}
+footer h3{
+    color: white;
+    font-size: 17px;
+    margin: 15px 0 60px 0;
+    text-align: center;
+}
+footer h3 span a{
+    color: white;
+}
